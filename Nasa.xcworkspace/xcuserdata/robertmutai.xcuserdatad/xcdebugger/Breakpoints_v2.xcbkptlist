@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DB0BDAEF-36E6-490C-81F1-C680122C2B6C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB563FA5-21FA-4514-BACD-CE9E3B1A0AD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaTests/NasaTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testgetNasaItems()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75508492-68EB-45C7-8274-966C76F0E4CA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NasaTests/NasaTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "testcheckValidJsonParsing()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75508492-68EB-45C7-8274-966C76F0E4CA - 672e219451db6415"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaTests.NasaTests.testcheckValidJsonParsing() -&gt; ()"
+                  moduleName = "NasaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/Nasa/NasaTests/NasaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1172">
+               </Location>
+               <Location
+                  uuid = "75508492-68EB-45C7-8274-966C76F0E4CA - 672e219451db6415"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NasaTests.NasaTests.testcheckValidJsonParsing() -&gt; ()"
+                  moduleName = "NasaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertmutai/Desktop/xcodeprojects/Nasa/NasaTests/NasaTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1088">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
