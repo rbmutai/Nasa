@@ -3,7 +3,5 @@ The project makes of MVVM Architecure. It uses RxSwift for the Reactive part of 
 
 
 # Testing
-It incoorperates unit testing to check for proper connectivity to the server to retreive the json data
-
-It also includes unit testing to check for proper parsing of json data from a sample json file that included data it the format expected from the server
+It  includes unit testing to check for proper parsing of json data from a sample json file that included data in the format expected from the server
 
