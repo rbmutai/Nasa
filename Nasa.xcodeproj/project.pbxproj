@@ -254,7 +254,7 @@
 				7177ECAE28B8B39B003C58CE /* Sources */,
 				7177ECAF28B8B39B003C58CE /* Frameworks */,
 				7177ECB028B8B39B003C58CE /* Resources */,
-				468325AA74DCC3E4994662C1 /* [CP] Embed Pods Frameworks */,
+				34FAED3B0C2CE57F42D4B6EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,7 +292,7 @@
 				7177ECD128B8B39D003C58CE /* Sources */,
 				7177ECD228B8B39D003C58CE /* Frameworks */,
 				7177ECD328B8B39D003C58CE /* Resources */,
-				41A9DFDDDFA68101763570DD /* [CP] Embed Pods Frameworks */,
+				82BC7759A227372193037B6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,24 +377,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41A9DFDDDFA68101763570DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		468325AA74DCC3E4994662C1 /* [CP] Embed Pods Frameworks */ = {
+		34FAED3B0C2CE57F42D4B6EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,6 +414,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82BC7759A227372193037B6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABEE9098C844221348F70BAF /* [CP] Check Pods Manifest.lock */ = {
