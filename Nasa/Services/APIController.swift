@@ -6,11 +6,9 @@
 //
 
 import Foundation
-class APIController{
+class APIController: APIServiceProtocol{
     
     let nasasearchurl = "https://images-api.nasa.gov/search?q=%22%22"
-    
-    static let shared = APIController()
     
     func fetchNasaImages(completion:@escaping (Any?, Error?) -> Void ){
         guard let url=URL(string: nasasearchurl)else{return}
@@ -19,7 +17,6 @@ class APIController{
             completion(data, error)
         }
         task.resume()
-        
     }
     
 }

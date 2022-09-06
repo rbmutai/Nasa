@@ -24,6 +24,8 @@
 		7177ECF028B8B888003C58CE /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECEF28B8B888003C58CE /* RemoteImage.swift */; };
 		7177ECF228B8B95A003C58CE /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECF128B8B95A003C58CE /* APIController.swift */; };
 		7177ECF428B8CACC003C58CE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECF328B8CACC003C58CE /* ViewModel.swift */; };
+		71B0DE5428C78DF2001B7FCD /* MockAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0DE5328C78DF2001B7FCD /* MockAPIController.swift */; };
+		71B0DE5628C796EA001B7FCD /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0DE5528C796EA001B7FCD /* APIServiceProtocol.swift */; };
 		71BC2A4528B8FC950050B099 /* NasaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC2A4428B8FC950050B099 /* NasaTableViewCell.swift */; };
 		71BC2A4728B91B170050B099 /* NasaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC2A4628B91B170050B099 /* NasaDetailView.swift */; };
 		71BC2A4928B91B300050B099 /* NasaDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC2A4828B91B300050B099 /* NasaDetailModel.swift */; };
@@ -73,6 +75,8 @@
 		7177ECEF28B8B888003C58CE /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		7177ECF128B8B95A003C58CE /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		7177ECF328B8CACC003C58CE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		71B0DE5328C78DF2001B7FCD /* MockAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIController.swift; sourceTree = "<group>"; };
+		71B0DE5528C796EA001B7FCD /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		71BC2A4428B8FC950050B099 /* NasaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaTableViewCell.swift; sourceTree = "<group>"; };
 		71BC2A4628B91B170050B099 /* NasaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDetailView.swift; sourceTree = "<group>"; };
 		71BC2A4828B91B300050B099 /* NasaDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDetailModel.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				7177ECF128B8B95A003C58CE /* APIController.swift */,
+				71B0DE5328C78DF2001B7FCD /* MockAPIController.swift */,
+				71B0DE5528C796EA001B7FCD /* APIServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -480,11 +486,13 @@
 			files = (
 				7177ECF228B8B95A003C58CE /* APIController.swift in Sources */,
 				7177ECC028B8B39B003C58CE /* Nasa.xcdatamodeld in Sources */,
+				71B0DE5428C78DF2001B7FCD /* MockAPIController.swift in Sources */,
 				71BC2A4928B91B300050B099 /* NasaDetailModel.swift in Sources */,
 				71BC2A4728B91B170050B099 /* NasaDetailView.swift in Sources */,
 				7177ECBA28B8B39B003C58CE /* ViewController.swift in Sources */,
 				71BC2A4528B8FC950050B099 /* NasaTableViewCell.swift in Sources */,
 				7177ECB628B8B39B003C58CE /* AppDelegate.swift in Sources */,
+				71B0DE5628C796EA001B7FCD /* APIServiceProtocol.swift in Sources */,
 				7177ECF028B8B888003C58CE /* RemoteImage.swift in Sources */,
 				7177ECB828B8B39B003C58CE /* SceneDelegate.swift in Sources */,
 				7177ECF428B8CACC003C58CE /* ViewModel.swift in Sources */,

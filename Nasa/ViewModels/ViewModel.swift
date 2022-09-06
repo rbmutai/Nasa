@@ -16,11 +16,15 @@ class ViewModel{
     //variable indicating error and notify UI to display it
     var error_received = PublishSubject<String>()
     
-    init(){
-        
+    //service object for making network calls
+    var service: APIServiceProtocol?
+    
+    init(service: APIServiceProtocol){
+        self.service = service
     }
     func getNasaImages() {
-        APIController.shared.fetchNasaImages { response, error in
+       
+        service?.fetchNasaImages { response, error in
             guard error == nil else{
                 self.error_received.onNext(error!.localizedDescription)
                
@@ -47,7 +51,6 @@ class ViewModel{
             self.nasaitems.onNext(items.collection.items)
             self.nasaitems.onCompleted()
            
-            
         }
     }
     func displayDateFormat(date:Date) -> String {

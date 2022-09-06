@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
-    private let viewModel=ViewModel()
+    private var viewModel:ViewModel!
     
     private var bag = DisposeBag()
 
@@ -22,9 +22,12 @@ class ViewController: UIViewController, UITableViewDelegate {
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.prefersLargeTitles=true
         
-        setUpTableView()
-       
+        //instantiate view model
+        viewModel = ViewModel(service: APIController())
         
+        setUpTableView()
+        
+       //subscribe to error events so as to show error message
         viewModel.error_received.subscribe { event in
             guard let msg = event.element else{return}
             
@@ -35,13 +38,12 @@ class ViewController: UIViewController, UITableViewDelegate {
            
         }.disposed(by: bag)
         
-        
+        //make network call to get nasa images
         viewModel.getNasaImages()
     }
     
     func setUpTableView(){
         
-      
         tableView
             .rx.setDelegate(self)
             .disposed(by: bag)
@@ -53,8 +55,6 @@ class ViewController: UIViewController, UITableViewDelegate {
             
         }.disposed(by: bag)
         
-       
-       
         //listen for when data comes back from server update table
         viewModel.nasaitems.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: NasaTableViewCell.self)){ row, item, cell in
             
