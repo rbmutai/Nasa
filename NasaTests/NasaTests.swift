@@ -38,9 +38,9 @@ class NasaTests: XCTestCase {
         
         let expectation = expectation(description: "Successfully parse data from mock api")
         
-        viewmodel.nasaitems.subscribe { event in
+        viewmodel.nasaitems.subscribe(onNext: { nasaitem in
           
-            guard let nasaitem = event.element else{return}
+           // guard let nasaitem = event.element else{return}
             
             let image_url=nasaitem[0].links[0].href
             
@@ -56,8 +56,9 @@ class NasaTests: XCTestCase {
             
             expectation.fulfill()
            
-        }.disposed(by: bag)
+        }).disposed(by: bag)
         
+       
         viewmodel.getNasaImages()
         
        waitForExpectations(timeout: 20, handler: nil)

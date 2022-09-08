@@ -47,7 +47,6 @@ class ViewModel{
                 return
             }
             
-            
             self.nasaitems.onNext(items.collection.items)
             self.nasaitems.onCompleted()
            

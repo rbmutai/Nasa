@@ -28,16 +28,15 @@ class ViewController: UIViewController, UITableViewDelegate {
         setUpTableView()
         
        //subscribe to error events so as to show error message
-        viewModel.error_received.subscribe { event in
-            guard let msg = event.element else{return}
-            
+        
+        viewModel.error_received.subscribe(onNext: { element in
             DispatchQueue.main.async {
-                self.showalert(msg: msg)
+                self.showalert(msg: element)
                 self.activityIndicator.stopAnimating()
             }
-           
-        }.disposed(by: bag)
-        
+        }).disposed(by: bag)
+
+       
         //make network call to get nasa images
         viewModel.getNasaImages()
     }
