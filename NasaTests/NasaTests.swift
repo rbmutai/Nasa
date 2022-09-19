@@ -11,7 +11,7 @@ import RxSwift
 
 class NasaTests: XCTestCase {
     
-    var viewmodel: ViewModel!
+    private var viewmodel: ViewModel!
     private var bag: DisposeBag!
 
     override func setUpWithError() throws {
@@ -40,7 +40,7 @@ class NasaTests: XCTestCase {
         
         viewmodel.nasaitems.subscribe(onNext: { nasaitem in
           
-           // guard let nasaitem = event.element else{return}
+         
             
             let image_url=nasaitem[0].links[0].href
             

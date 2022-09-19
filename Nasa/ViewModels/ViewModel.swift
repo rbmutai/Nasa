@@ -21,6 +21,7 @@ class ViewModel{
     
     init(service: APIServiceProtocol){
         self.service = service
+       
     }
     func getNasaImages() {
        

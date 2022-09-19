@@ -15,6 +15,7 @@ class MockAPIController: APIServiceProtocol {
             let bundleurl = Bundle.main.url(forResource: "MockData", withExtension: "json")!
             
             let jsondata = try Data(contentsOf: bundleurl)
+            
             completion(jsondata,nil)
         }catch{
             completion(nil, error)

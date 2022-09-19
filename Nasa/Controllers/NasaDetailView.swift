@@ -16,7 +16,7 @@ class NasaDetailView: UIViewController {
     @IBOutlet weak var lbSeparator: UILabel!
     @IBOutlet weak var lbDetails: UITextView!
     
-    var nasadetailmodel: NasaDetailModel!
+     var nasadetailmodel: NasaDetailModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
