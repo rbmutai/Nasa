@@ -77,16 +77,16 @@ class ViewController: UIViewController, UITableViewDelegate {
         }.disposed(by: bag)
     }
     func navigateNext(item:Items){
-//        let detailView = self.storyboard?.instantiateViewController(withIdentifier: "NasaDetailView") as! NasaDetailView
-//        detailView.nasadetailmodel = NasaDetailModel(item: item)
-//
-//        self.navigationController?.pushViewController(detailView, animated: false)
+        let detailView = self.storyboard?.instantiateViewController(withIdentifier: "NasaDetailView") as! NasaDetailView
+        detailView.nasadetailmodel = NasaDetailModel(item: item)
+
+        self.navigationController?.pushViewController(detailView, animated: false)
         
-        if let detailView = storyboard?.instantiateViewController(withIdentifier: "NasaDetailView") as? NasaDetailView {
-            
-            detailView.nasadetailmodel = NasaDetailModel(item: item)
-            navigationController?.pushViewController(detailView, animated: true)
-        }
+//        if let detailView = storyboard?.instantiateViewController(withIdentifier: "NasaDetailView") as? NasaDetailView {
+//
+//            detailView.nasadetailmodel = NasaDetailModel(item: item)
+//            navigationController?.pushViewController(detailView, animated: true)
+//        }
         
     }
     func showalert(msg:String){
