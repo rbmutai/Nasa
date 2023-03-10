@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Accelerate
 class ViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -39,6 +40,13 @@ class ViewController: UIViewController, UITableViewDelegate {
        
         //make network call to get nasa images
         viewModel.getNasaImages()
+        
+        let numbers: [Int] = [1000, 5670, -1, 42, 21341123, 9223372036833434684]
+        let average: Int = numbers.reduce(0,&+) / numbers.count
+        
+        
+        
+        print("AVERAGE:\(average)")
     }
     
     func setUpTableView(){
@@ -90,7 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate {
         
     }
     func showalert(msg:String){
-        let alert=UIAlertController(title: "That didn't work", message: msg, preferredStyle: .alert)
+        let alert=UIAlertController(title: "That didn't work now", message: msg, preferredStyle: .alert)
         let action=UIAlertAction(title: "Retry", style: .default) { alertaction in
             self.activityIndicator.startAnimating()
             self.viewModel.getNasaImages()
