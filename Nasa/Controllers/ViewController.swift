@@ -83,7 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate {
 //        self.navigationController?.pushViewController(detailView, animated: false)
         
         if let detailView = storyboard?.instantiateViewController(withIdentifier: "NasaDetailView") as? NasaDetailView {
-            
+
             detailView.nasadetailmodel = NasaDetailModel(item: item)
             navigationController?.pushViewController(detailView, animated: true)
         }
