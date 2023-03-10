@@ -10,6 +10,7 @@
 		534F06DC06EB271D1AFD4A8A /* Pods_Nasa_NasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D182DCE0F16B893B96C697CC /* Pods_Nasa_NasaUITests.framework */; };
 		711E610628BA0C20008D011A /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 711E610528BA0045008D011A /* MockData.json */; };
 		711E610928BA1111008D011A /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 711E610528BA0045008D011A /* MockData.json */; };
+		7146058929BB535E00D77433 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146058829BB535E00D77433 /* HomeViewController.swift */; };
 		7177ECB628B8B39B003C58CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECB528B8B39B003C58CE /* AppDelegate.swift */; };
 		7177ECB828B8B39B003C58CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECB728B8B39B003C58CE /* SceneDelegate.swift */; };
 		7177ECBA28B8B39B003C58CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177ECB928B8B39B003C58CE /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		658A580FF6C69A8A6F78C6C8 /* Pods-Nasa-NasaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa-NasaUITests.release.xcconfig"; path = "Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		711E610528BA0045008D011A /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
 		711E610A28BA186D008D011A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7146058829BB535E00D77433 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7177ECB228B8B39B003C58CE /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7177ECB528B8B39B003C58CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7177ECB728B8B39B003C58CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				7177ECB928B8B39B003C58CE /* ViewController.swift */,
+				7146058829BB535E00D77433 /* HomeViewController.swift */,
 				71BC2A4428B8FC950050B099 /* NasaTableViewCell.swift */,
 				71BC2A4628B91B170050B099 /* NasaDetailView.swift */,
 			);
@@ -489,6 +492,7 @@
 				71B0DE5428C78DF2001B7FCD /* MockAPIController.swift in Sources */,
 				71BC2A4928B91B300050B099 /* NasaDetailModel.swift in Sources */,
 				71BC2A4728B91B170050B099 /* NasaDetailView.swift in Sources */,
+				7146058929BB535E00D77433 /* HomeViewController.swift in Sources */,
 				7177ECBA28B8B39B003C58CE /* ViewController.swift in Sources */,
 				71BC2A4528B8FC950050B099 /* NasaTableViewCell.swift in Sources */,
 				7177ECB628B8B39B003C58CE /* AppDelegate.swift in Sources */,
