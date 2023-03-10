@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		534F06DC06EB271D1AFD4A8A /* Pods_Nasa_NasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D182DCE0F16B893B96C697CC /* Pods_Nasa_NasaUITests.framework */; };
+		711ABF3729BB6D4600CA86D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711ABF3629BB6D4600CA86D9 /* HomeViewController.swift */; };
 		711E610628BA0C20008D011A /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 711E610528BA0045008D011A /* MockData.json */; };
 		711E610928BA1111008D011A /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 711E610528BA0045008D011A /* MockData.json */; };
 		7146058B29BB623E00D77433 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7146058A29BB623E00D77433 /* NextViewController.swift */; };
@@ -56,6 +57,7 @@
 		22EA242B49053A25CE835990 /* Pods_Nasa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB4AAE6DF5A7252F2A507C9 /* Pods-NasaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaTests.release.xcconfig"; path = "Target Support Files/Pods-NasaTests/Pods-NasaTests.release.xcconfig"; sourceTree = "<group>"; };
 		658A580FF6C69A8A6F78C6C8 /* Pods-Nasa-NasaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa-NasaUITests.release.xcconfig"; path = "Target Support Files/Pods-Nasa-NasaUITests/Pods-Nasa-NasaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		711ABF3629BB6D4600CA86D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		711E610528BA0045008D011A /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
 		711E610A28BA186D008D011A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7146058A29BB623E00D77433 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				7177ECB928B8B39B003C58CE /* ViewController.swift */,
 				7146058A29BB623E00D77433 /* NextViewController.swift */,
+				711ABF3629BB6D4600CA86D9 /* HomeViewController.swift */,
 				71BC2A4428B8FC950050B099 /* NasaTableViewCell.swift */,
 				71BC2A4628B91B170050B099 /* NasaDetailView.swift */,
 			);
@@ -492,6 +495,7 @@
 				7177ECC028B8B39B003C58CE /* Nasa.xcdatamodeld in Sources */,
 				71B0DE5428C78DF2001B7FCD /* MockAPIController.swift in Sources */,
 				71BC2A4928B91B300050B099 /* NasaDetailModel.swift in Sources */,
+				711ABF3729BB6D4600CA86D9 /* HomeViewController.swift in Sources */,
 				71BC2A4728B91B170050B099 /* NasaDetailView.swift in Sources */,
 				7177ECBA28B8B39B003C58CE /* ViewController.swift in Sources */,
 				71BC2A4528B8FC950050B099 /* NasaTableViewCell.swift in Sources */,
